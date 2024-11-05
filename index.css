@@ -57,3 +57,85 @@ header{
         }
     }
 }
+.texto{
+    padding: 16px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .tarefas{
+        width: 20px;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    button{
+        flex: 1;
+        align-items: center;
+        height: 30px;
+        max-width: 100px;
+        background-color: var(--pink);
+        border-radius: 5px;
+        color: var(--white);
+        font-size: 10px;
+        float: right;
+        cursor: pointer;
+        &:hover{
+            background-color: #d3458a;
+        }
+        .material-symbols-outlined {
+            font-variation-settings:0, 200, 0, 20;
+            gap: 5px;
+          }
+    }  
+}
+.box {
+    width: 100%;
+    height: 300px;
+    top: 204px;
+    left: 60px;
+    border-radius: 5px;
+}
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    li{
+        height: 250px;
+        background-color: #FFFFFF;
+        border: 20px double blue;
+    }
+}
+
+/* Tablet na horizontal */
+@media only screen and (max-width: 1024px) {
+    ul{
+        grid-template-columns: 1fr 1fr 1fr;
+        li{
+            background-color: pink;
+        }
+    }
+}
+
+/* Tablet na vertical */
+@media only screen and (max-width: 768px) {
+    ul{
+        grid-template-columns: 1fr 1fr 1fr;
+        li{
+            background-color: rgb(241, 56, 87);
+        }
+}
+}
+    
+
+/* Smartphones*/
+@media only screen and (max-width: 600px) {
+    ul{
+        grid-template-columns: 1fr 1fr 1fr;
+        li{
+            background-color: var(--pink);
+        }
+}
+}
