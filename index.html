@@ -10,6 +10,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              spacing: {
+                46: '46',
+              }
+            }
+          }
+        }
+      </script>
     <link rel="stylesheet" href="index.css">
 </head>
 
@@ -26,31 +38,22 @@
             light_mode
         </span>
     </header>
-    <div class="texto">
-        <h1 class="tarefas">Tarefas</h1>
-        <button type="submit">
-        <span class="material-symbols-outlined">
+    <main class="px-[60px] pt-[50px]">
+        <h1 class="flex justify-between">
+            Tarefas 
+            <button class="h-46 bg-pink-500 hover:bg-pink-700 duration-200 text-white rounded-md flex items-center gap-3 px-5 hover:shadow-1g hover:shadow-pnik-300">
+                <span class="material-symbols-outlined">
             add_circle
-        </span>
+            </span>
             Nova Tarefa
         </button>
-    </div>
-    <div class="box">
-        <ul>
-            <li>
-                <h2>Título da Tarefa</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit, non quasi voluptatibus</p>
-            </li>
-            <li>
-                <h2>Título da Tarefa</h2>
-                <p>Cum assumenda eum magnam nisi a sed, numquam autem dignissimos</p>
-            </li>
-            <li>
-                <h2>Título da Tarefa</h2>
-                <p>Natus molestiae illum reiciendis quos, officiis, repudiandae doloremque corporis.</p>
-            </li>
-        </ul>
-    </div>   
+    </h1>
+    <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap">
+        <li class="shadow-md rounded-md p-4">1</li>
+        <li class="shadow-md rounded-md p-4">2</li>
+        <li class="shadow-md rounded-md p-4">3</li>
+        <li class="shadow-md rounded-md p-4">4</li>
+    </ul>
+    </main>
 </body>
-
 </html>
